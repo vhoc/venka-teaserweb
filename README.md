@@ -1,1 +1,1 @@
-# My personal starting boilerplate for Landing Pages
+# Teaser website for the Venka App
