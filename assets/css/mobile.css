@@ -1,0 +1,126 @@
+#main, #teaser {
+    height: 100%;
+}
+
+#teaser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teaser > .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#teaser > .container > img:nth-child(1) {
+    position: relative;
+    width: 60%;
+    left: -100%;
+    animation: logoVenka 1s forwards ease-out;
+}
+
+#teaser > .container > div {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#teaser > .container > div > h1 {
+    opacity: 0;
+    animation: proximamente 1s forwards ease-out;
+    animation-delay: 1s;
+}
+
+#teaser > .container > div > div {
+    opacity: 0;
+    animation: barra 1s forwards ease-out;
+    animation-delay: 1.2s;
+}
+
+#teaser > .container > div > img {
+    width: 100px;
+}
+
+#divphone {
+    position: relative;
+    margin: 0 !important;
+    width: 100px;
+    right: -100%;
+    animation: smartphone 1s forwards ease-out;
+    animation-delay: 0.5s;
+}
+
+#imgphone {
+    position: relative;    
+    animation: todoBounce 2s infinite alternate ease-in-out;
+    animation-delay: 2s;
+}
+
+.progress {
+    margin-top: 1rem;
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border: 10px solid rgb(0, 102, 0);
+    border-radius: 15px;
+    -webkit-box-shadow: inset 5px 4px 18px 5px rgba(0,0,0,0.76); 
+    box-shadow: inset 5px 4px 18px 5px rgba(0,0,0,0.76);
+}
+
+.progress .color {
+    position: absolute;
+    margin-top: -5px;
+    background-color: #ffffff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 2.5s forwards ease-out;
+}
+
+@keyframes logoVenka {
+    to {
+        left: 0;
+    }
+}
+
+@keyframes progres {
+    0% {
+        width: 0%;
+    }
+  
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes smartphone {
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes proximamente {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes barra {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes todoBounce {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -20px;
+    }
+}

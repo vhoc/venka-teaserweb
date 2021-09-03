@@ -8,23 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title></title>
-    <meta name="title" content="">
-    <meta name="description" content="">
+    <title>Venka</title>
+    <meta name="title" content="Venka">
+    <meta name="description" content="Venka: Próximamente">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://">
+    <meta property="og:url" content="https://venka.mx">
+    <meta property="og:title" content="Venka">
+    <meta property="og:description" content="Venka: Próximamente">
+    <meta property="og:image" content="https://venka.mx/assets/img/teaser-logo.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://">
-    <meta property="twitter:title" content="">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:image" content="https://">
+    <meta property="twitter:url" content="https://venka.mx">
+    <meta property="twitter:title" content="Venka">
+    <meta property="twitter:description" content="Venka: Próximamente">
+    <meta property="twitter:image" content="https://venka.mx/assets/img/teaser-logo.webp">
 
     <!-- Styles -->
     <style>
@@ -41,16 +41,37 @@
         }
 
         @font-face {
-            font-family: '';
-            src: url('') format('woff2'),
-                url('') format('woff');
+            font-family: 'roboto-regular';
+            src: url('assets/fonts/Roboto-Regular.woff2') format('woff2'),
+                url('assets/fonts/Roboto-Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
 
+        @font-face {
+            font-family: 'roboto-thin';
+            src: url('assets/fonts/Roboto-Thin.woff2') format('woff2'),
+                url('assets/fonts/Roboto-Thin.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        html, body {
+            min-width: 320px;
+            width: 100vw;
+            height: 100%;
+            background: rgb(115,180,65);
+            background: -moz-linear-gradient(180deg, rgba(115,180,65,1) 0%, rgba(114,190,56,1) 65%, rgba(130,217,63,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(115,180,65,1) 0%, rgba(114,190,56,1) 65%, rgba(130,217,63,1) 100%);
+            background: linear-gradient(180deg, rgba(115,180,65,1) 0%, rgba(114,190,56,1) 65%, rgba(130,217,63,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73b441",endColorstr="#82d93f",GradientType=1);
+        }
+
         body {
-            font-family: '';
+            font-family: 'roboto-thin';
+            color: white;
         }
 
         li { list-style: none }
@@ -79,46 +100,29 @@
     
     <div id="main">
         
-        <!---------------------------------->
-        <!--        Navigation Bar        -->
-        <!---------------------------------->
-
-        <nav>
-
-        </nav>
-
-        <!---------------------------------->
-        <!--            Header            -->
-        <!---------------------------------->
-
-        <header>
-
-        </header>
-
-        <!---------------------------------->
-        <!--            Section           -->
-        <!---------------------------------->
-
-        <section id="">
+        <section id="teaser">
 
             <div class="container">
 
+                <img src="assets/img/venka-logo-blanco.svg" loading="lazy" alt="Venka"/>
 
+                <div>
 
+                    <h1>Próximamente</h1>
+
+                    <div class="progress">
+                        <div class="color"></div>
+                      </div>
+
+                </div>
+
+                <div id="divphone">
+                    <img id="imgphone" aria-hidden="true" src="assets/img/celular.webp" loading="lazy" />
+                </div>
+                
             </div>
 
         </section>
-
-        <!---------------------------------->
-        <!--            Footer            -->
-        <!---------------------------------->
-
-        <footer>
-
-            
-
-        </footer>
-
 
     </div>
 

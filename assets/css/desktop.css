@@ -1,5 +1,21 @@
 @media only screen and ( min-width: 769px ) {
     
- 
+    #teaser > .container {
+        flex-wrap: wrap;
+        height: 500px;
+    }
+
+    #divphone {
+        width: 300px;
+    }
+
+    #teaser > .container > div > img {
+        width: 300px;
+    }
+
+    .progress {
+        width: 300px;
+        border: 15px solid rgb(0, 102, 0);
+    }
  
  }
